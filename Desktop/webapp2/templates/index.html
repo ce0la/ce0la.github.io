@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Welcome{% endblock %}
+{% block content %}
+  <!-- Portfolio Grid Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/cabin.png' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/cake.png' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/circus.png' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/game.png' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/safe.png' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/submarine.png' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+          <h2 class="text-center text-uppercase text-white">About</h2>
+          <hr class="star-light mb-5">
+          <div class="row">
+              <div class="col-lg-4 ml-auto">
+                  <p class="lead mb-0">Olaniyi is a penultimate student of the premier University of Ibadan in Oyo state, Nigeria.
+                      He has been a fitness enthusiast for as long as he can remember (7 years, give or take) and has been playing around computers for a while.
+                  Now, he plans to fully immerse himself in them.</p>
+              </div>
+              <div class="col-lg-4 mr-auto">
+                  <p class="lead mb-0">He dreams of becoming a really good full stack web developer and make a ton of money while at it. He wishes to grow his beards fully so he can complete the sexy programmer's look. :D
+                      His only known weaknesses are family, babies, cute cat pictures,
+                        <a class="his-lady" href="https://twitter.com/adeyemi_nicole">his lady</a> and the <i>amala</i> she makes. (^_^)</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 ml-auto">
+                    <img src="{% static '/img/portfolio/whatsapp-logo.png' %}" alt="Whatsapp Logo" />
+                    <p class="lead mb-0"><br /> Phone Number: +2348108175512 </p>
+                  </div>
+                  <div class="col-lg-5 "></div>
+                  <div class="col-lg-3 mr-auto">
+                    <a href="mailto: oshunboteo@gmail.com"><img src="{% static '/img/portfolio/gmail-logo.png' %}" alt="Gmail Logo" /></a>
+                    <p class="lead mb-0"><br /> Mail: oshunboteo@gmail.com</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
